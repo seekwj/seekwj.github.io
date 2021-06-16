@@ -11,6 +11,132 @@
     <guid>https://seekwj.github.io/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/md/Markdown%e8%af%ad%e6%b3%95%e5%ad%a6%e4%b9%a0.png" referrerpolicy="no-referrer">
-            </div>Markdown语法学习 标题 ​ Ctrl + 1~5 文档导航 ​ [toc] 代码 短代码：code 长代码：``` + java (什么语言后面加什么) 1 2 3 4 5 1 public class HelloWorld { 2 public static void main(String[] args){]]></description>
+            </div><h2 id="标题">标题</h2>
+<p>​	<code>Ctrl + 1~5</code></p>
+<h2 id="文档导航">文档导航</h2>
+<p>​	<code>[toc]</code></p>
+<h2 id="代码">代码</h2>
+<p>短代码：<code>code</code></p>
+<p>长代码：``` + java (什么语言后面加什么)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">1</span> 	<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+<span class="n">2</span>  		<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
+<span class="n">3</span>			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;HelloWorld&#34;</span><span class="o">);</span>
+<span class="n">4</span>   	<span class="o">}</span> 
+<span class="n">5</span> 	<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="引用">引用</h2>
+<p><code>&gt;</code>式</p>
+<blockquote>
+<p>度尽劫波</p>
+</blockquote>
+<p><code>（```式）</code>  代码之内的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">print(&#39;hello nick&#39;)
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="图片">图片</h2>
+<p><code>![](url)</code></p>
+<p>这是取的七牛云里的图片</p>
+<p></p>
+<h2 id="链接">链接</h2>
+<p><code>[超链接名]（超链接地址）</code></p>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener noreffer">百度</a></p>
+<p><code>&lt;超链接地址&gt;</code>(这种方式以链接地址本身显示)</p>
+<p><a href="https://www.cnblogs.com/nickchen121/p/10718112.html">https://www.cnblogs.com/nickchen121/p/10718112.html</a></p>
+<h2 id="列表">列表</h2>
+<p><code>- + *</code> 都可以（跟内容之间有空格）</p>
+<ul>
+<li>列表1</li>
+<li>列表2</li>
+<li>列表3</li>
+</ul>
+<p><code>1.</code>（也可以）</p>
+<ol>
+<li>列表1</li>
+<li>列表2</li>
+<li>列表2</li>
+</ol>
+<h2 id="加粗">加粗</h2>
+<p><code>** 要加粗的文本 **</code>
+<strong>我被加粗了</strong></p>
+<h2 id="斜体">斜体</h2>
+<p><code>* 要倾斜的文本 *</code>
+<em>我被倾斜了</em></p>
+<h2 id="分割线">分割线</h2>
+<p>​	<code>---</code>
+效果：</p>
+<hr>
+<h2 id="表格">表格</h2>
+<p>​	第二行必须得有，并且第二行的冒号代表对齐格式，分别为居中；右对齐；左对齐）：</p>
+<p>代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">name | age | sex 
+:-:|:-|-: 
+tony|20|男 
+lucy|18|女
+</code></pre></td></tr></table>
+</div>
+</div><p>效果：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">name</th>
+<th style="text-align:center">age</th>
+<th style="text-align:center">sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">tony</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">男</td>
+</tr>
+<tr>
+<td style="text-align:center">lucy</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">女</td>
+</tr>
+</tbody>
+</table>
+<h2 id="数学公式块状">数学公式（块状）</h2>
+<p>代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">$$
+\sum_{i=1}^{10}f(i)\,\,\text{thanks}
+$$
+</code></pre></td></tr></table>
+</div>
+</div><p>效果：
+$$
+\sum_{i=1}^{10}f(i),,\text{thanks}
+$$</p>
+]]></description>
 </item></channel>
 </rss>

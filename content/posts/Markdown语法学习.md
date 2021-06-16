@@ -1,26 +1,19 @@
 ---
 title: "Markdown语法学习"
-subtitle: ""
 date: 2019-03-04T15:58:26+08:00
 lastmod: 2020-03-04T15:58:26+08:00
 draft: true
-description: "文章的简单"
+description: "Markdown语法学习"
+summary: "		Markdown语法的一些简单示例"
 license: ""
 images: []
 
 tags: [Markdown]
 categories: [Markdown]
 featuredImage: "/md/Markdown语法学习.png"
-
-twemoji: true
-lightgallery: true
-ruby: true
-fraction: true
-fontawesome: true
-linkToMarkdown: true
-rssFullText: false
 ---
-# Markdown语法学习
+
+
 
 ## 标题
 
