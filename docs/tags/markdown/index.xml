@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Markdown - 标签 - 炑炑先生</title>
+        <link>https://seekwj.github.io/tags/markdown/</link>
+        <description>Markdown - 标签 - 炑炑先生</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 04 Mar 2019 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://seekwj.github.io/tags/markdown/" rel="self" type="application/rss+xml" /><item>
+    <title>Markdown语法学习</title>
+    <link>https://seekwj.github.io/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</link>
+    <pubDate>Mon, 04 Mar 2019 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://seekwj.github.io/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/md/Markdown%e8%af%ad%e6%b3%95%e5%ad%a6%e4%b9%a0.png" referrerpolicy="no-referrer">
+            </div>Markdown语法学习 标题 ​ Ctrl + 1~5 文档导航 ​ [toc] 代码 短代码：code 长代码：``` + java (什么语言后面加什么) 1 2 3 4 5 1 public class HelloWorld { 2 public static void main(String[] args){]]></description>
+</item></channel>
+</rss>
