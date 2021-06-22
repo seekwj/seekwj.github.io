@@ -2,7 +2,7 @@
 title: " VSCode编辑器"
 date: 2020-03-10T15:58:26+08:00
 lastmod: 2020-03-10T15:58:26+08:00
-draft: true
+
 description: "VSCode编辑器"
 summary: "		VSCode编辑器常用快捷键"
 images: []

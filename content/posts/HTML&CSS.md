@@ -2,10 +2,9 @@
 title: "HTML&CSS"
 date: 2020-11-07T15:58:26+08:00
 lastmod: 2021-06-22T15:23:26+08:00
-draft: true
+
 description: "HTML&CSS"
 summary: "		HTML&CSS基础"
-license: ""
 images: []
 
 tags: [HTML,CSS]
@@ -154,8 +153,8 @@ featuredImage: "/md/HTML&CSS.jpg"
 
  **两种做法**
 
--  **#号 + id属性**
--  **#号 + name属性（注意name属性加给的是a标签）**
+- **#号 + id属性**
+- **#号 + name属性（注意name属性加给的是a标签）**
 
 
 
