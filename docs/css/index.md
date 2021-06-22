@@ -21,9 +21,9 @@
 
 - **基本样式 ：**
 
-  ​	 **`width` : 宽**
-   	**`height` : 高**
-   	**`background-color` : 背景色**
+   &nbsp;&nbsp;&nbsp;&nbsp;​	**`width` : 宽**<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;​	**`height` : 高**<br>
+   &nbsp;&nbsp;&nbsp;&nbsp;​	**`background-color` : 背景色**
 
 - **CSS注释 ：**
 
@@ -43,7 +43,7 @@
 
    ​	**`style`标签**<br>
 
-   ​	**区别：**
+   &nbsp;&nbsp;​	**区别：**
    ​        **内部样式的代码可以复用、复合W3C的规范标准，进行让结构和样式分开处理**
 
 3. **外部样式**

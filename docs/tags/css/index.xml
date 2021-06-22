@@ -36,9 +36,9 @@
 </li>
 <li>
 <p><strong>基本样式 ：</strong></p>
-<p>​	 <strong><code>width</code> : 宽</strong>
-<strong><code>height</code> : 高</strong>
-<strong><code>background-color</code> : 背景色</strong></p>
+<p>    ​	<strong><code>width</code> : 宽</strong><br>
+    ​	<strong><code>height</code> : 高</strong><br>
+    ​	<strong><code>background-color</code> : 背景色</strong></p>
 </li>
 <li>
 <p><strong>CSS注释 ：</strong></p>
@@ -61,7 +61,7 @@
 <li>
 <p><strong>内部样式</strong></p>
 <p>​	<strong><code>style</code>标签</strong><br></p>
-<p>​	<strong>区别：</strong>
+<p>  ​	<strong>区别：</strong>
 ​        <strong>内部样式的代码可以复用、复合W3C的规范标准，进行让结构和样式分开处理</strong></p>
 </li>
 <li>
