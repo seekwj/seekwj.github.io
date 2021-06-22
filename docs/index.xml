@@ -6,15 +6,141 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 07 Nov 2020 15:58:26 &#43;0800</lastBuildDate>
             <atom:link href="https://seekwj.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>HTML&amp;CSS</title>
-    <link>https://seekwj.github.io/htmlcss/</link>
+    <title>CSS</title>
+    <link>https://seekwj.github.io/css/</link>
     <pubDate>Sat, 07 Nov 2020 15:58:26 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://seekwj.github.io/htmlcss/</guid>
+    <guid>https://seekwj.github.io/css/</guid>
     <description><![CDATA[<div class="featured-image">
-                <img src="/md/HTML&amp;CSS.jpg" referrerpolicy="no-referrer">
-            </div><h2 id="html">HTML</h2>
-<h3 id="html基本结构和属性"><strong>HTML基本结构和属性</strong></h3>
+                <img src="/md/CSS.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="css基础语法"><strong>CSS基础语法</strong></h2>
+<ul>
+<li>
+<p><strong>格式 ：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"> <span class="nt">选择器</span> <span class="p">{</span> <span class="err">属性1</span> <span class="err">:</span> <span class="err">值1</span> <span class="p">;</span> <span class="err">属性2</span> <span class="err">:</span> <span class="err">值2</span> <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>单位 ：</strong></p>
+<p><strong>长度单位 ：</strong></p>
+<ol>
+<li><strong><code>px</code> &mdash;&gt; 像素</strong></li>
+<li><strong><code>%</code> &mdash;&gt; 百分比 <br>
+外容器1 -&gt; 600px  当前容器 50% -&gt; 300px</strong>
+<strong>外容器2 -&gt; 400px  当前容器 50% -&gt; 200px</strong></li>
+</ol>
+</li>
+<li>
+<p><strong>基本样式 ：</strong></p>
+<p>​	 <strong><code>width</code> : 宽</strong>
+<strong><code>height</code> : 高</strong>
+<strong><code>background-color</code> : 背景色</strong></p>
+</li>
+<li>
+<p><strong>CSS注释 ：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*CSS注释的内容*/</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h2 id="css样式的引入方式"><strong>CSS样式的引入方式</strong></h2>
+<ol>
+<li>
+<p><strong>内联样式</strong></p>
+<p>​	<strong><code>style</code>属性</strong></p>
+</li>
+<li>
+<p><strong>内部样式</strong></p>
+<p>​	<strong><code>style</code>标签</strong><br></p>
+<p>​	<strong>区别：</strong>
+​        <strong>内部样式的代码可以复用、复合W3C的规范标准，进行让结构和样式分开处理</strong></p>
+</li>
+<li>
+<p><strong>外部样式</strong></p>
+<p><strong>引入一个单独的CSS文件，例如：<code>name.css</code></strong></p>
+<ul>
+<li>
+<p><strong>通过<code>link</code>标签引入外部资源，<code>rel</code>属性指定资源跟页面的关系，<code>href</code>属性资源的地址。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;./name.css&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>通过<code>@impor</code>t方式引入外部样式 ( 这种方式有很多问题，不建议使用 )</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"> <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;./common.css&#39;</span><span class="o">)</span><span class="p">;&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<p><strong><code>link</code>和<code>@import</code>的区别：</strong></p>
+<ol>
+<li>
+<p><strong>从属关系区别</strong></p>
+<p><code>@import</code>是 CSS 提供的语法规则，只有导入样式表的作用；<code>link</code>是HTML提供的标签，不仅可以加载 CSS 文件，还可以定义 <code>RSS</code>、<code>rel</code> 连接属性等</p>
+</li>
+<li>
+<p><strong>加载顺序区别</strong></p>
+<p>加载页面时，<code>link</code>标签引入的 CSS 被同时加载；<code>@import</code>引入的 CSS 将在页面加载完毕后被加载</p>
+</li>
+<li>
+<p><strong>兼容性区别</strong></p>
+<p><code>@import</code>是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；<code>link</code>标签作为 HTML 元素，不存在兼容性问题</p>
+</li>
+<li>
+<p><strong><code>DOM</code>可控性区别</strong></p>
+<p>可以通过 JS 操作 <code>DOM</code> ，插入<code>link</code>标签来改变样式；由于 DOM 方法是基于文档的，无法使用<code>@import</code>的方式插入样式</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="css中的颜色表示法"><strong>CSS中的颜色表示法</strong></h2>
+<ol>
+<li>
+<p><strong>单词表示法 ：<code>red</code> <code>blue</code> <code>green</code> <code>yellow</code></strong></p>
+<p></p>
+</li>
+<li>
+<p><strong>十六进制表示法 ：<code>#000000</code> <code>#ffffff</code></strong></p>
+<p>0 1 2 3 4 5 6 7 8 9 a b c d e f</p>
+</li>
+<li>
+<p><code>RGB</code><strong>表示法 ：<code>rgb(255,255,255)</code></strong></p>
+<p>取值范围 0 ~ 255</p>
+<p><strong>获取颜色的工具：</strong>
+<a href="https://www.baidufe.com/fehelper" target="_blank" rel="noopener noreffer"><strong>https://www.baidufe.com/fehelper</strong></a></p>
+</li>
+</ol>
+]]></description>
+</item><item>
+    <title>HTML</title>
+    <link>https://seekwj.github.io/html/</link>
+    <pubDate>Sat, 07 Nov 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://seekwj.github.io/html/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/md/HTML.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="html基本结构和属性"><strong>HTML基本结构和属性</strong></h2>
 <p>​    <strong>HTML ： 超文本 标记 语言</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -65,7 +191,7 @@
     <span class="p">&lt;</span><span class="nt">标签</span> <span class="na">属性</span><span class="o">=</span><span class="s">&#34;值&#34;</span> <span class="na">属性2</span><span class="o">=</span><span class="s">&#34;值2&#34;</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="html初始代码"><strong>HTML初始代码</strong></h3>
+</div><h2 id="html初始代码"><strong>HTML初始代码</strong></h2>
 <p><strong>每个.html文件都有的代码叫做初始代码 ， 要复合html文件的规范写法。</strong></p>
 <p><strong>! + tab键 : 快速的创建html的初始代码</strong></p>
 <div class="highlight"><div class="chroma">
@@ -94,7 +220,7 @@
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="html注释"><strong>HTML注释</strong></h3>
+</div><h2 id="html注释"><strong>HTML注释</strong></h2>
 <ul>
 <li>
 <p><strong>写法：<code>&lt;!-- 注释的内容 --&gt; </code> 在浏览器中看不到，只能在代码中看到注释的内容。</strong></p>
@@ -114,7 +240,7 @@
 </ol>
 </li>
 </ul>
-<h3 id="标题与段落"><strong>标题与段落</strong></h3>
+<h2 id="标题与段落"><strong>标题与段落</strong></h2>
 <ul>
 <li>
 <p><strong>标题 -&gt; 双标签 : <code>&lt;h1&gt;&lt;/h1&gt;</code>   &hellip;  <code>&lt;h6&gt;&lt;/h6&gt;</code></strong> <strong><code>在一个网页中，h1标题最重要，并且一个.html文件中只能出现一次h1标签。</code></strong></p>
@@ -124,7 +250,7 @@
 <p><strong>段落 -&gt; 双标签 : <code>&lt;p&gt;&lt;/p&gt;</code></strong></p>
 </li>
 </ul>
-<h3 id="文本修饰标签"><strong>文本修饰标签</strong></h3>
+<h2 id="文本修饰标签"><strong>文本修饰标签</strong></h2>
 <ul>
 <li>
 <p><strong>强调 -&gt; 双标签 :</strong></p>
@@ -153,7 +279,7 @@
 </li>
 </ul>
 <hr>
-<h3 id="图片标签"><strong>图片标签</strong></h3>
+<h2 id="图片标签"><strong>图片标签</strong></h2>
 <p><strong><code>&lt;img&gt;</code> &mdash;&gt; 单标签</strong></p>
 <ul>
 <li><strong><code>src</code> : 引入图片的地址。</strong></li>
@@ -161,7 +287,7 @@
 <li><strong><code>title</code> : 提示信息</strong></li>
 <li><strong><code>width</code>、<code>height</code> : 图片的大小</strong></li>
 </ul>
-<h3 id="链接标签"><strong>链接标签</strong></h3>
+<h2 id="链接标签"><strong>链接标签</strong></h2>
 <p><strong><code>a</code> &mdash;&gt; 双标签	<code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
 <ul>
 <li><strong><code>href</code> : 链接地址</strong></li>
@@ -169,13 +295,13 @@
 </ul>
 <p><strong><code>&lt;base&gt;</code> &mdash;&gt; 单标签 ：作用是改变链接的默认行为的</strong></p>
 <p>​	<strong>（一般写在<code>&lt;head&gt;</code>中）</strong></p>
-<h3 id="锚点"><strong>锚点</strong></h3>
+<h2 id="锚点"><strong>锚点</strong></h2>
 <p><strong>两种做法</strong></p>
 <ul>
 <li><strong>#号 + id属性</strong></li>
 <li><strong>#号 + name属性（注意name属性加给的是a标签）</strong></li>
 </ul>
-<h3 id="特殊字符"><strong>特殊字符</strong></h3>
+<h2 id="特殊字符"><strong>特殊字符</strong></h2>
 <table>
 <thead>
 <tr>
@@ -227,14 +353,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="列表标签"><strong>列表标签</strong></h3>
+<h2 id="列表标签"><strong>列表标签</strong></h2>
 <ol>
 <li><strong>无序列表 &mdash;&gt; <code>ul</code> <code>li</code> 符合嵌套的规范</strong></li>
 <li><strong>有序列表 &mdash;&gt; <code>ol</code> <code>li</code> 一般用的比较少，可以用无序列表来实现</strong></li>
 <li><strong>定义列表 &mdash;&gt; <code>dl</code> <code>dt</code> <code>dd</code> 列表项需要添加标题和对标题进行描述的内容</strong></li>
 </ol>
 <p>​    <strong><code>注：列表之间可以互相嵌套，形成多层级的列表</code></strong></p>
-<h3 id="表格标签"><strong>表格标签</strong></h3>
+<h2 id="表格标签"><strong>表格标签</strong></h2>
 <ul>
 <li><strong><code>&lt;table&gt;</code> ：表格的最外层容器</strong></li>
 <li><strong><code>&lt;tr&gt;</code> ：定义表格行</strong></li>
@@ -243,9 +369,9 @@
 <li><strong><code>&lt;caption&gt;</code> ：定义表格标题</strong></li>
 </ul>
 <p><strong><code>注：上面属性是有嵌套关系的，要符合嵌套规范。</code></strong></p>
-<p>​    <strong>语义化标签：<code>tHead</code>、<code>tBody</code>、<code>tFood</code></strong></p>
-<p><strong>注：在一个<code>table</code>中，<code>tBody</code>是可以出现多次的，但是<code>tHead</code>、<code>tFood</code>只能出现一次。</strong></p>
-<h4 id="表格属性"><strong>表格属性</strong></h4>
+<p>​     <strong>语义化标签：<code>tHead</code>、<code>tBody</code>、<code>tFood</code></strong></p>
+<p>​	 <strong>注：在一个<code>table</code>中，<code>tBody</code>是可以出现多次的，但是<code>tHead</code>、<code>tFood</code>只能出现一次。</strong></p>
+<h3 id="表格属性"><strong>表格属性</strong></h3>
 <ul>
 <li>
 <p><strong><code>border</code> ：表格边框</strong></p>
@@ -270,8 +396,8 @@
 <p><a href="../demo/%e8%a1%a8%e6%a0%bc%e4%bf%a1%e6%81%af%e5%b1%95%e7%a4%ba%e5%b0%8f%e6%a1%88%e4%be%8b/%e8%a1%a8%e6%a0%bc%e4%bf%a1%e6%81%af%e5%b1%95%e7%a4%ba%e6%a1%88%e4%be%8b.html" rel="">表格信息展示小案例</a></p>
 </li>
 </ul>
-<h3 id="表单标签"><strong>表单标签</strong></h3>
-<h4 id="表单元素"><strong>表单元素</strong></h4>
+<h2 id="表单标签"><strong>表单标签</strong></h2>
+<h3 id="表单元素"><strong>表单元素</strong></h3>
 <ul>
 <li>
 <p><strong><code>&lt;form&gt;</code> ：表单的最外层容器</strong></p>
@@ -376,7 +502,7 @@
 <p><code>fieldset</code> ：定义域。即输入区加有文字的边框</p>
 </li>
 </ul>
-<h4 id="表单常用属性"><strong>表单常用属性</strong></h4>
+<h3 id="表单常用属性"><strong>表单常用属性</strong></h3>
 <table>
 <thead>
 <tr>
@@ -515,130 +641,11 @@
 <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="div和span"><strong>div和span</strong></h3>
+</div><h2 id="div和span"><strong>div和span</strong></h2>
 <ul>
 <li><strong><code>div</code> ：做一个区域划分的块</strong></li>
 <li><strong><code>span</code>  ：对文字进行修饰的内联</strong></li>
 </ul>
-<h2 id="css"><strong>CSS</strong></h2>
-<h3 id="css基础语法"><strong>CSS基础语法</strong></h3>
-<ul>
-<li>
-<p><strong>格式 ：</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css"> <span class="nt">选择器</span> <span class="p">{</span> <span class="err">属性1</span> <span class="err">:</span> <span class="err">值1</span> <span class="p">;</span> <span class="err">属性2</span> <span class="err">:</span> <span class="err">值2</span> <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>单位 ：</strong></p>
-<p><strong>长度单位 ：</strong></p>
-<ol>
-<li><strong><code>px</code> &mdash;&gt; 像素</strong></li>
-<li><strong><code>%</code> &mdash;&gt; 百分比 <br>
-外容器1 -&gt; 600px  当前容器 50% -&gt; 300px</strong>
-<strong>外容器2 -&gt; 400px  当前容器 50% -&gt; 200px</strong></li>
-</ol>
-</li>
-<li>
-<p><strong>基本样式 ：</strong></p>
-<p>​	 <strong><code>width</code> : 宽</strong>
-<strong><code>height</code> : 高</strong>
-<strong><code>background-color</code> : 背景色</strong></p>
-</li>
-<li>
-<p><strong>CSS注释 ：</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*CSS注释的内容*/</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<h3 id="css样式的引入方式"><strong>CSS样式的引入方式</strong></h3>
-<ol>
-<li>
-<p><strong>内联样式</strong></p>
-<p>​	<strong><code>style</code>属性</strong></p>
-</li>
-<li>
-<p><strong>内部样式</strong></p>
-<p>​	<strong><code>style</code>标签</strong><br></p>
-<p>​	<strong>区别：</strong>
-​        <strong>内部样式的代码可以复用、复合W3C的规范标准，进行让结构和样式分开处理</strong></p>
-</li>
-<li>
-<p><strong>外部样式</strong></p>
-<p><strong>引入一个单独的CSS文件，例如：<code>name.css</code></strong></p>
-<ul>
-<li>
-<p><strong>通过<code>link</code>标签引入外部资源，<code>rel</code>属性指定资源跟页面的关系，<code>href</code>属性资源的地址。</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;./name.css&#34;</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p><strong>通过<code>@impor</code>t方式引入外部样式 ( 这种方式有很多问题，不建议使用 )</strong></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"> <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;./common.css&#39;</span><span class="o">)</span><span class="p">;&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
-</div>
-</div></li>
-</ul>
-<p><strong><code>link</code>和<code>@import</code>的区别：</strong></p>
-<ol>
-<li>
-<p><strong>从属关系区别</strong></p>
-<p><code>@import</code>是 CSS 提供的语法规则，只有导入样式表的作用；<code>link</code>是HTML提供的标签，不仅可以加载 CSS 文件，还可以定义 <code>RSS</code>、<code>rel</code> 连接属性等</p>
-</li>
-<li>
-<p><strong>加载顺序区别</strong></p>
-<p>加载页面时，<code>link</code>标签引入的 CSS 被同时加载；<code>@import</code>引入的 CSS 将在页面加载完毕后被加载</p>
-</li>
-<li>
-<p><strong>兼容性区别</strong></p>
-<p><code>@import</code>是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；<code>link</code>标签作为 HTML 元素，不存在兼容性问题</p>
-</li>
-<li>
-<p><strong><code>DOM</code>可控性区别</strong></p>
-<p>可以通过 JS 操作 <code>DOM</code> ，插入<code>link</code>标签来改变样式；由于 DOM 方法是基于文档的，无法使用<code>@import</code>的方式插入样式</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="css中的颜色表示法"><strong>CSS中的颜色表示法</strong></h3>
-<ol>
-<li>
-<p><strong>单词表示法 ：<code>red</code> <code>blue</code> <code>green</code> <code>yellow</code></strong></p>
-<p></p>
-</li>
-<li>
-<p><strong>十六进制表示法 ：<code>#000000</code> <code>#ffffff</code></strong></p>
-<p>0 1 2 3 4 5 6 7 8 9 a b c d e f</p>
-</li>
-<li>
-<p><code>RGB</code><strong>表示法 ：<code>rgb(255,255,255)</code></strong></p>
-<p>取值范围 0 ~ 255</p>
-<p><strong>获取颜色的工具：</strong>
-<a href="https://www.baidufe.com/fehelper" target="_blank" rel="noopener noreffer"><strong>https://www.baidufe.com/fehelper</strong></a></p>
-</li>
-</ol>
 ]]></description>
 </item><item>
     <title> VSCode编辑器</title>

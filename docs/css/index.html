@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>CSS - 炑炑先生</title><meta name="Description" content="CSS"><meta property="og:title" content="CSS" />
+<meta property="og:description" content="CSS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seekwj.github.io/css/" /><meta property="og:image" content="https://seekwj.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-11-07T15:58:26&#43;08:00" />
+<meta property="article:modified_time" content="2021-06-22T15:23:26&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://seekwj.github.io/logo.png"/>
+
+<meta name="twitter:title" content="CSS"/>
+<meta name="twitter:description" content="CSS"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="../images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://seekwj.github.io/css/" /><link rel="prev" href="https://seekwj.github.io/html/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "CSS",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/seekwj.github.io\/css\/"
+        },"genre": "posts","keywords": "CSS","wordcount":  641 ,
+        "url": "https:\/\/seekwj.github.io\/css\/","datePublished": "2020-11-07T15:58:26+08:00","dateModified": "2021-06-22T15:23:26+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "炑炑"
+            },"description": "CSS"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="炑炑先生">炑炑先生</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="炑炑先生">炑炑先生</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">CSS</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>炑炑</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/css/"><i class="far fa-folder fa-fw"></i>CSS</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-07">2020-11-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 641 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/md/CSS.jpg"
+        data-srcset="/md/CSS.jpg, /md/CSS.jpg 1.5x, /md/CSS.jpg 2x"
+        data-sizes="auto"
+        alt="/md/CSS.jpg"
+        title="CSS" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#css基础语法"><strong>CSS基础语法</strong></a></li>
+    <li><a href="#css样式的引入方式"><strong>CSS样式的引入方式</strong></a></li>
+    <li><a href="#css中的颜色表示法"><strong>CSS中的颜色表示法</strong></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="css基础语法"><strong>CSS基础语法</strong></h2>
+<ul>
+<li>
+<p><strong>格式 ：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"> <span class="nt">选择器</span> <span class="p">{</span> <span class="err">属性1</span> <span class="err">:</span> <span class="err">值1</span> <span class="p">;</span> <span class="err">属性2</span> <span class="err">:</span> <span class="err">值2</span> <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>单位 ：</strong></p>
+<p><strong>长度单位 ：</strong></p>
+<ol>
+<li><strong><code>px</code> &mdash;&gt; 像素</strong></li>
+<li><strong><code>%</code> &mdash;&gt; 百分比 <br>
+外容器1 -&gt; 600px  当前容器 50% -&gt; 300px</strong>
+<strong>外容器2 -&gt; 400px  当前容器 50% -&gt; 200px</strong></li>
+</ol>
+</li>
+<li>
+<p><strong>基本样式 ：</strong></p>
+<p>​	 <strong><code>width</code> : 宽</strong>
+<strong><code>height</code> : 高</strong>
+<strong><code>background-color</code> : 背景色</strong></p>
+</li>
+<li>
+<p><strong>CSS注释 ：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*CSS注释的内容*/</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h2 id="css样式的引入方式"><strong>CSS样式的引入方式</strong></h2>
+<ol>
+<li>
+<p><strong>内联样式</strong></p>
+<p>​	<strong><code>style</code>属性</strong></p>
+</li>
+<li>
+<p><strong>内部样式</strong></p>
+<p>​	<strong><code>style</code>标签</strong><br></p>
+<p>​	<strong>区别：</strong>
+​        <strong>内部样式的代码可以复用、复合W3C的规范标准，进行让结构和样式分开处理</strong></p>
+</li>
+<li>
+<p><strong>外部样式</strong></p>
+<p><strong>引入一个单独的CSS文件，例如：<code>name.css</code></strong></p>
+<ul>
+<li>
+<p><strong>通过<code>link</code>标签引入外部资源，<code>rel</code>属性指定资源跟页面的关系，<code>href</code>属性资源的地址。</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;./name.css&#34;</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>通过<code>@impor</code>t方式引入外部样式 ( 这种方式有很多问题，不建议使用 )</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"> <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s1">&#39;./common.css&#39;</span><span class="o">)</span><span class="p">;&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<p><strong><code>link</code>和<code>@import</code>的区别：</strong></p>
+<ol>
+<li>
+<p><strong>从属关系区别</strong></p>
+<p><code>@import</code>是 CSS 提供的语法规则，只有导入样式表的作用；<code>link</code>是HTML提供的标签，不仅可以加载 CSS 文件，还可以定义 <code>RSS</code>、<code>rel</code> 连接属性等</p>
+</li>
+<li>
+<p><strong>加载顺序区别</strong></p>
+<p>加载页面时，<code>link</code>标签引入的 CSS 被同时加载；<code>@import</code>引入的 CSS 将在页面加载完毕后被加载</p>
+</li>
+<li>
+<p><strong>兼容性区别</strong></p>
+<p><code>@import</code>是 CSS2.1 才有的语法，故只可在 IE5+ 才能识别；<code>link</code>标签作为 HTML 元素，不存在兼容性问题</p>
+</li>
+<li>
+<p><strong><code>DOM</code>可控性区别</strong></p>
+<p>可以通过 JS 操作 <code>DOM</code> ，插入<code>link</code>标签来改变样式；由于 DOM 方法是基于文档的，无法使用<code>@import</code>的方式插入样式</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="css中的颜色表示法"><strong>CSS中的颜色表示法</strong></h2>
+<ol>
+<li>
+<p><strong>单词表示法 ：<code>red</code> <code>blue</code> <code>green</code> <code>yellow</code></strong></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://static01.imgkr.com/temp/8d9487f36a26402c98366645b73b0d8c.jpg"
+        data-srcset="https://static01.imgkr.com/temp/8d9487f36a26402c98366645b73b0d8c.jpg, https://static01.imgkr.com/temp/8d9487f36a26402c98366645b73b0d8c.jpg 1.5x, https://static01.imgkr.com/temp/8d9487f36a26402c98366645b73b0d8c.jpg 2x"
+        data-sizes="auto"
+        alt="https://static01.imgkr.com/temp/8d9487f36a26402c98366645b73b0d8c.jpg"
+        title="颜色名称" /></p>
+</li>
+<li>
+<p><strong>十六进制表示法 ：<code>#000000</code> <code>#ffffff</code></strong></p>
+<p>0 1 2 3 4 5 6 7 8 9 a b c d e f</p>
+</li>
+<li>
+<p><code>RGB</code><strong>表示法 ：<code>rgb(255,255,255)</code></strong></p>
+<p>取值范围 0 ~ 255</p>
+<p><strong>获取颜色的工具：</strong>
+<a href="https://www.baidufe.com/fehelper" target="_blank" rel="noopener noreffer"><strong>https://www.baidufe.com/fehelper</strong></a></p>
+</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-06-22</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://seekwj.github.io/css/" data-title="CSS" data-hashtags="CSS"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://seekwj.github.io/css/" data-hashtag="CSS"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://seekwj.github.io/css/" data-title="CSS" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://seekwj.github.io/css/" data-title="CSS"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://seekwj.github.io/css/" data-title="CSS" data-image="/md/CSS.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="https://seekwj.github.io/css/" data-title="CSS" data-description="CSS"><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="https://seekwj.github.io/css/" data-title="CSS" data-description="CSS"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://seekwj.github.io/css/" data-title="CSS"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/css/">CSS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/html/" class="prev" rel="prev" title="HTML"><i class="fas fa-angle-left fa-fw"></i>HTML</a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">炑炑</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":[""],"clientID":"","clientSecret":"","id":"2020-11-07T15:58:26+08:00","owner":"","repo":"","title":"CSS"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
