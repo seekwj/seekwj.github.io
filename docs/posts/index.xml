@@ -129,6 +129,137 @@
 <a href="https://www.baidufe.com/fehelper" target="_blank" rel="noopener noreffer"><strong>https://www.baidufe.com/fehelper</strong></a></p>
 </li>
 </ol>
+<h2 id="css背景样式"><strong>CSS背景样式</strong></h2>
+<p><strong><code> background-color</code> 背景色</strong></p>
+<p><strong><code>background-image</code> 背景图</strong></p>
+<ul>
+<li>
+<p><code>url</code>(背景地址)</p>
+<p><code>默认：会水平垂直都铺满背景图</code></p>
+</li>
+</ul>
+<p><strong><code>background-repeat</code> 平铺方式</strong></p>
+<ul>
+<li><code>repeat-x</code>   x轴平铺</li>
+<li><code>repeat-y</code>   y轴平铺</li>
+<li><code>repeat</code> ( x , y 都进行平铺，<code>默认值</code> )</li>
+<li><code>no-repeat</code>  都不平铺</li>
+</ul>
+<p><strong><code>background-position</code> : 背景位置</strong></p>
+<ul>
+<li><strong><code>x</code> <code>y</code> : number(<code>px</code>、<code>%</code>) | 单词</strong></li>
+</ul>
+<p>　　　　<code>x</code> : <code>left</code>、<code>center</code>、<code>right</code></p>
+<p>　　　　<code>y</code> : <code>top</code>、<code>center</code>、<code>bottom</code></p>
+<p><strong><code>background-attachment</code> : 背景图随滚动条移动的方式</strong></p>
+<ul>
+<li>
+<p><code>scroll</code> : <code>默认值</code>  ( 背景位置是按照当前元素进行偏移的 )</p>
+</li>
+<li>
+<p><code>fixed</code> ： ( 背景位置是按照浏览器进行偏移的 )</p>
+<p><strong>练习 ：<a href="../demo/%e8%a7%86%e8%a7%89%e5%b7%ae/%e8%a7%86%e8%a7%89%e5%b7%ae.html" rel="">利用滚动条移动方式实现视觉差网页</a></strong></p>
+</li>
+</ul>
+<h2 id="css边框样式"><strong>CSS边框样式</strong></h2>
+<p><strong><code>border-style</code> : 边框样式</strong></p>
+<ul>
+<li><code>solid</code> : 实线</li>
+<li><code>dashed</code> : 虚线</li>
+<li><code>dotted</code> : 点线</li>
+</ul>
+<p><strong><code>border-width</code> : 边框大小</strong></p>
+<ul>
+<li>number(<code>px</code>、<code>%</code>)</li>
+</ul>
+<p><strong><code>border-color</code> : 边框颜色</strong></p>
+<ul>
+<li><code>red</code> <code>#f00</code> &hellip;</li>
+</ul>
+<p>边框也可以针对某一边进行单独设置 : <code>border-left-style</code> : 中间是方向 <code>left</code>、<code>right</code>、<code>top</code>、<code>bottom</code></p>
+<p>颜色：透明颜色 <code>transparent</code></p>
+<h2 id="css文字样式"><strong>CSS文字样式</strong></h2>
+<p><strong><code>font-family</code> : 字体类型</strong></p>
+<ul>
+<li>
+<p>英文字体：例如 ：<code>Arial</code> , &lsquo;<code>Times New Roman</code>&rsquo;</p>
+</li>
+<li>
+<p>中文字体：例如 ：<code>微软雅黑</code> ,  <code>宋体</code></p>
+<p>中文字体都有英文名称</p>
+</li>
+<li>
+<p><code>衬线体</code>、<code>非衬线体</code><br>
+<code>衬线字体</code>（宋体）：见名知意，就是<code>比划有粗有细，非衬线字体所以字的所有比划的都是一样粗细（幼圆）</code></p>
+<p>　<strong>区别 ：</strong></p>
+<ul>
+<li><em><code>衬线字体每个字的笔划有粗有细</code></em>，在连续阅读时流畅性更好</li>
+<li><em><code>无衬线字体笔划粗细均匀</code></em>，适用于单词短句</li>
+</ul>
+<blockquote>
+<p>注意 ：如果字体名称出现空格要用引号，如：'<code>Times New Roman</code>'</p>
+</blockquote>
+</li>
+</ul>
+<p><strong><code>font-size</code> : 字体大小</strong></p>
+<ul>
+<li>
+<p>默认 ：<strong><code>16px</code></strong></p>
+</li>
+<li>
+<p>写法 ：</p>
+<ol>
+<li>
+<p>number(<code>px</code>)</p>
+</li>
+<li>
+<p>单词 ( <code>small</code> <code>large</code> &hellip; )<strong>不推荐使用</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><strong>属性取值</strong></th>
+<th style="text-align:center"><strong>字体大小</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong><code>xx-small</code></strong></td>
+<td style="text-align:center"><strong>最小</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong><code>x-small</code></strong></td>
+<td style="text-align:center"><strong>较小</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong><code>small</code></strong></td>
+<td style="text-align:center"><strong>小</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong><code>medium</code></strong></td>
+<td style="text-align:center"><strong>正常（默认值）</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong><code>large</code></strong></td>
+<td style="text-align:center"><strong>大</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong><code>x-large</code></strong></td>
+<td style="text-align:center"><strong>较大</strong></td>
+</tr>
+<tr>
+<td style="text-align:center"><strong><code>xx-large</code></strong></td>
+<td style="text-align:center"><strong>最大</strong></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<blockquote>
+<p>注 ：字体大小一般为偶数</p>
+</blockquote>
+</li>
+</ul>
+<p>font-weight : 字体粗细</p>
 ]]></description>
 </item><item>
     <title>HTML</title>
