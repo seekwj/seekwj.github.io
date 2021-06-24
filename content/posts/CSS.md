@@ -10,6 +10,7 @@ images: []
 tags: [CSS]
 categories: [CSS]
 featuredImage: "/md/CSS.jpg"
+
 ---
 
 
@@ -32,9 +33,9 @@ featuredImage: "/md/CSS.jpg"
 
 - **基本样式 ：**
 
-   &nbsp;&nbsp;&nbsp;&nbsp;​	**`width` : 宽**<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;​	**`height` : 高**<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;​	**`background-color` : 背景色**
+  &nbsp;&nbsp;&nbsp;&nbsp;​	**`width` : 宽**<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;​	**`height` : 高**<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;​	**`background-color` : 背景色**
 
 - **CSS注释 ：**
 
@@ -111,4 +112,105 @@ featuredImage: "/md/CSS.jpg"
            [**https://www.baidufe.com/fehelper**](https://www.baidufe.com/fehelper)
 
 
+
+## **CSS背景样式**
+
+**` background-color` 背景色**
+
+**`background-image` 背景图**
+
+- `url`(背景地址)		
+
+  `默认：会水平垂直都铺满背景图`	
+
+**`background-repeat` 平铺方式**
+
+- `repeat-x`   x轴平铺
+- `repeat-y`   y轴平铺
+- `repeat` ( x , y 都进行平铺，`默认值` )
+- `no-repeat`  都不平铺
+
+**`background-position` : 背景位置**
+
+-  **`x` `y` : number(`px`、`%`) | 单词**
+
+&#12288;&#12288;&#12288;&#12288;`x` : `left`、`center`、`right`
+
+&#12288;&#12288;&#12288;&#12288;`y` : `top`、`center`、`bottom`
+
+**`background-attachment` : 背景图随滚动条移动的方式**
+
+- `scroll` : `默认值`  ( 背景位置是按照当前元素进行偏移的 )
+
+- `fixed` ： ( 背景位置是按照浏览器进行偏移的 )
+
+  **练习 ：[利用滚动条移动方式实现视觉差网页](../demo/视觉差/视觉差.html)**
+
+
+
+## **CSS边框样式**
+
+ **`border-style` : 边框样式**
+
+- `solid` : 实线
+- `dashed` : 虚线
+- `dotted` : 点线
+
+**`border-width` : 边框大小**
+
+- number(`px`、`%`) 
+
+**`border-color` : 边框颜色**
+
+- `red` `#f00` ...     
+
+边框也可以针对某一边进行单独设置 : `border-left-style` : 中间是方向 `left`、`right`、`top`、`bottom`   
+
+颜色：透明颜色 `transparent`
+
+
+
+## **CSS文字样式**
+
+**`font-family` : 字体类型**
+
+- 英文字体：例如 ：`Arial` , '`Times New Roman`' 
+
+- 中文字体：例如 ：`微软雅黑` ,  `宋体`
+
+  中文字体都有英文名称
+
+- `衬线体`、`非衬线体`<br>
+  `衬线字体`（宋体）：见名知意，就是`比划有粗有细，非衬线字体所以字的所有比划的都是一样粗细（幼圆）`
+
+  &#12288;**区别 ：**
+
+  - *`衬线字体每个字的笔划有粗有细`*，在连续阅读时流畅性更好
+  - *`无衬线字体笔划粗细均匀`*，适用于单词短句
+
+   > 注意 ：如果字体名称出现空格要用引号，如：'`Times New Roman`'
+
+**`font-size` : 字体大小**
+
+- 默认 ：**`16px`**
+
+- 写法 ：
+
+  1. number(`px`)
+  
+  2. 单词 ( `small` `large` ... )**不推荐使用**
+  
+     |  **属性取值**  |    **字体大小**    |
+     | :------------: | :----------------: |
+     | **`xx-small`** |      **最小**      |
+     | **`x-small`**  |      **较小**      |
+     |  **`small`**   |       **小**       |
+     |  **`medium`**  | **正常（默认值）** |
+     |  **`large`**   |       **大**       |
+     | **`x-large`**  |      **较大**      |
+     | **`xx-large`** |      **最大**      |
+  
+  > 注 ：字体大小一般为偶数
+
+font-weight : 字体粗细
 
