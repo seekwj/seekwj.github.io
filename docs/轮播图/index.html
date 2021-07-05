@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> 轮播图 - 炑炑先生</title><meta name="Description" content="轮播图"><meta property="og:title" content=" 轮播图" />
+<meta property="og:description" content="轮播图" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" /><meta property="og:image" content="https://seekwj.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-10-05T20:10:40&#43;08:00" />
+<meta property="article:modified_time" content="2020-10-05T20:40:40&#43;08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://seekwj.github.io/logo.png"/>
+
+<meta name="twitter:title" content=" 轮播图"/>
+<meta name="twitter:description" content="轮播图"/>
+<meta name="application-name" content="炑炑先生">
+<meta name="apple-mobile-web-app-title" content="炑炑先生"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="../images/avatar.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" /><link rel="prev" href="https://seekwj.github.io/ormlite%E6%95%B0%E6%8D%AE%E5%BA%93/" /><link rel="next" href="https://seekwj.github.io/html/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": " 轮播图",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/seekwj.github.io\/%E8%BD%AE%E6%92%AD%E5%9B%BE\/"
+        },"genre": "posts","keywords": "比赛, Android","wordcount":  1396 ,
+        "url": "https:\/\/seekwj.github.io\/%E8%BD%AE%E6%92%AD%E5%9B%BE\/","datePublished": "2020-10-05T20:10:40+08:00","dateModified": "2020-10-05T20:40:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "炑炑"
+            },"description": "轮播图"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="炑炑先生">炑炑先生</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="炑炑先生">炑炑先生</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX"> 轮播图</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>炑炑</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%AF%94%E8%B5%9B/"><i class="far fa-folder fa-fw"></i>比赛</a>&nbsp;<a href="/categories/android/"><i class="far fa-folder fa-fw"></i>Android</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-10-05">2020-10-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1396 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/md/Android/%e6%af%94%e8%b5%9b/%e8%bd%ae%e6%92%ad%e5%9b%be.jpg"
+        data-srcset="/md/Android/%e6%af%94%e8%b5%9b/%e8%bd%ae%e6%92%ad%e5%9b%be.jpg, /md/Android/%e6%af%94%e8%b5%9b/%e8%bd%ae%e6%92%ad%e5%9b%be.jpg 1.5x, /md/Android/%e6%af%94%e8%b5%9b/%e8%bd%ae%e6%92%ad%e5%9b%be.jpg 2x"
+        data-sizes="auto"
+        alt="/md/Android/比赛/轮播图.jpg"
+        title="轮播图" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#控件数据初始化"><strong>控件数据初始化</strong></a></li>
+    <li><a href="#轮播图标记联动代码"><strong>轮播图标记联动代码</strong></a></li>
+    <li><a href="#自动轮播的定时器"><strong>自动轮播的定时器</strong></a></li>
+    <li><a href="#viewpager左右滑动时停止自动轮播的代码"><strong><code>ViewPager</code>左右滑动时停止自动轮播的代码</strong></a></li>
+    <li><a href="#两边箭头点击切换轮播图的代码"><strong>两边箭头点击切换轮播图的代码</strong></a></li>
+    <li><a href="#viewpager适配器"><strong><code>ViewPager</code>适配器</strong></a></li>
+    <li><a href="#轮播图图片点击事件"><strong>轮播图图片点击事件</strong></a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FragmentLunBo</span> <span class="kd">extends</span> <span class="n">Fragment</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">ImageView</span> <span class="n">iv_left</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">LinearLayout</span> <span class="n">points</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">ImageView</span> <span class="n">iv_right</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isTouch</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">ViewPager</span> <span class="n">lunbo</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Timer</span> <span class="n">timer</span><span class="o">;</span>
+    <span class="c1">//四张轮播的图片
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">imgs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;()</span> <span class="o">{{</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">lunb1</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">lunb2</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">lunb3</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">lunb4</span><span class="o">);</span>
+    <span class="o">}};</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="n">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span>
+                             <span class="n">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">inflater</span>
+                <span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_lunbo</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">initView</span><span class="o">(</span><span class="n">view</span><span class="o">);</span> <span class="c1">//初始化控件
+</span><span class="c1"></span>        <span class="k">return</span> <span class="n">view</span><span class="o">;</span>
+    <span class="o">}</span>
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">initView</span><span class="o">(</span><span class="n">View</span> <span class="n">rootView</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">isTouch</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="n">timer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">iv_left</span> <span class="o">=</span> <span class="o">(</span><span class="n">ImageView</span><span class="o">)</span> <span class="n">rootView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">iv_left</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">points</span> <span class="o">=</span> <span class="o">(</span><span class="n">LinearLayout</span><span class="o">)</span> <span class="n">rootView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">points</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">iv_right</span> <span class="o">=</span> <span class="o">(</span><span class="n">ImageView</span><span class="o">)</span> <span class="n">rootView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">iv_right</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">lunbo</span> <span class="o">=</span> <span class="o">(</span><span class="n">ViewPager</span><span class="o">)</span> <span class="n">rootView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">lunbo</span><span class="o">);</span>
+       	<span class="c1">//.....//详细代码下面分段解释
+</span><span class="c1"></span>    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="控件数据初始化"><strong>控件数据初始化</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"> <span class="c1">//viewpager设置适配器       
+</span><span class="c1"></span><span class="n">lunbo</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="k">new</span> <span class="n">PageAdapter</span><span class="o">());</span>
+<span class="c1">//viewpager下面的标记点
+</span><span class="c1"></span><span class="n">initPoints</span><span class="o">();</span>
+<span class="c1">//设置一开始轮播图在第一张        
+</span><span class="c1"></span><span class="n">lunbo</span><span class="o">.</span><span class="na">setCurrentItem</span><span class="o">(</span><span class="n">0</span><span class="o">);</span>
+<span class="c1">//设置标记点第一个为选中状态        
+</span><span class="c1"></span><span class="n">selectdePoint</span><span class="o">(</span><span class="n">0</span><span class="o">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>生成轮播图标记的代码</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">initPoints</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">4</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span><span class="c1">//因为只有四张图所以循环四次 实际可以根据图片集合的长度来循环list。size()
+</span><span class="c1"></span>            <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="k">new</span> <span class="n">View</span><span class="o">(</span><span class="n">getContext</span><span class="o">());</span>
+            <span class="n">view</span><span class="o">.</span><span class="na">setBackgroundResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">border_white_shape</span><span class="o">);</span>
+            <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span> <span class="n">layoutParams</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinearLayout</span><span class="o">.</span><span class="na">LayoutParams</span><span class="o">(</span><span class="n">15</span><span class="o">,</span> <span class="n">15</span><span class="o">);</span>
+            <span class="n">layoutParams</span><span class="o">.</span><span class="na">leftMargin</span> <span class="o">=</span> <span class="n">20</span><span class="o">;</span> 
+            <span class="n">view</span><span class="o">.</span><span class="na">setLayoutParams</span><span class="o">(</span><span class="n">layoutParams</span><span class="o">);</span>
+            <span class="n">points</span><span class="o">.</span><span class="na">addView</span><span class="o">(</span><span class="n">view</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="轮播图标记联动代码"><strong>轮播图标记联动代码</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//viewpager监听事件        
+</span><span class="c1"></span><span class="n">lunbo</span><span class="o">.</span><span class="na">addOnPageChangeListener</span><span class="o">(</span><span class="k">new</span> <span class="n">ViewPager</span><span class="o">.</span><span class="na">OnPageChangeListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPageScrolled</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">,</span> <span class="kt">float</span> <span class="n">positionOffset</span><span class="o">,</span> <span class="kt">int</span> <span class="n">positionOffsetPixels</span><span class="o">)</span> <span class="o">{</span>
+
+            <span class="o">}</span>
+
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPageSelected</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+                <span class="kt">int</span> <span class="n">rel</span> <span class="o">=</span> <span class="n">position</span> <span class="o">%</span> <span class="n">4</span><span class="o">;</span> <span class="c1">//返回但钱对应的viewpager页面下标
+</span><span class="c1"></span>                <span class="n">selectdePoint</span><span class="o">(</span><span class="n">rel</span><span class="o">);</span>
+            <span class="o">}</span>
+
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPageScrollStateChanged</span><span class="o">(</span><span class="kt">int</span> <span class="n">state</span><span class="o">)</span> <span class="o">{</span>
+
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+<span class="c1">//更具索引来设置标记点的状态
+</span><span class="c1"></span> <span class="kd">private</span> <span class="kt">void</span> <span class="nf">selectdePoint</span><span class="o">(</span><span class="kt">int</span> <span class="n">pos</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">4</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">View</span> <span class="n">view</span> <span class="o">=</span> <span class="n">points</span><span class="o">.</span><span class="na">getChildAt</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">pos</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">view</span><span class="o">.</span><span class="na">setBackgroundResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">border_blue_shape</span><span class="o">);</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="n">view</span><span class="o">.</span><span class="na">setBackgroundResource</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">border_white_shape</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="自动轮播的定时器"><strong>自动轮播的定时器</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">  <span class="n">timer</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                <span class="n">getActivity</span><span class="o">().</span><span class="na">runOnUiThread</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+                    <span class="nd">@Override</span>
+                    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                        <span class="c1">//是否自动轮播如果点击箭头或滑动切换轮播图时 停止自动轮播
+</span><span class="c1"></span>                        <span class="k">if</span> <span class="o">(</span><span class="n">isTouch</span><span class="o">)</span> <span class="o">{</span>
+                            <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">lunbo</span><span class="o">.</span><span class="na">getCurrentItem</span><span class="o">()</span> <span class="o">+</span> <span class="n">1</span><span class="o">;</span>
+                            <span class="n">lunbo</span><span class="o">.</span><span class="na">setCurrentItem</span><span class="o">(</span><span class="n">index</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+                        <span class="o">}</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+            <span class="o">}</span>
+        <span class="o">},</span> <span class="n">1500</span><span class="o">,</span> <span class="n">2000</span><span class="o">);</span><span class="c1">//第一次开启时延时1.5秒来要不然太快看不到第一张图片 每2秒切换下一张图片
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id="viewpager左右滑动时停止自动轮播的代码"><strong><code>ViewPager</code>左右滑动时停止自动轮播的代码</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"> <span class="n">lunbo</span><span class="o">.</span><span class="na">setOnTouchListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnTouchListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">onTouch</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">,</span> <span class="n">MotionEvent</span> <span class="n">motionEvent</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">isTouch</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span> <span class="c1">//直接在事件开始将是否停止自动轮播属性设为false
+</span><span class="c1"></span>                <span class="k">switch</span> <span class="o">(</span><span class="n">motionEvent</span><span class="o">.</span><span class="na">getAction</span><span class="o">())</span> <span class="o">{</span>
+                   <span class="c1">// case MotionEvent.ACTION_DOWN://因为图片设置了点击事件所以viewpager监听触摸事件监听不到按下的事件
+</span><span class="c1"></span>                   <span class="c1">//     isTouch = false;
+</span><span class="c1"></span>                   <span class="c1">//     break;
+</span><span class="c1"></span>                    <span class="k">case</span> <span class="n">MotionEvent</span><span class="o">.</span><span class="na">ACTION_CANCEL</span><span class="o">:</span>
+                    <span class="k">case</span> <span class="n">MotionEvent</span><span class="o">.</span><span class="na">ACTION_UP</span><span class="o">:</span>
+                        <span class="c1">//viewpager滑动结束1.5秒后开启自动轮播
+</span><span class="c1"></span>                        <span class="n">timer</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+                            <span class="nd">@Override</span>
+                            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                                <span class="n">isTouch</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                            <span class="o">}</span>
+                        <span class="o">},</span><span class="n">1500</span><span class="o">);</span>
+                        <span class="k">break</span><span class="o">;</span>
+                <span class="o">}</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="两边箭头点击切换轮播图的代码"><strong>两边箭头点击切换轮播图的代码</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//左边箭头点击事件 
+</span><span class="c1"></span><span class="n">iv_left</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="c1">//获得上一个轮播图的位置
+</span><span class="c1"></span>                <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">lunbo</span><span class="o">.</span><span class="na">getCurrentItem</span><span class="o">()</span> <span class="o">-</span> <span class="n">1</span><span class="o">;</span>
+                <span class="n">jianto</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+<span class="c1">//右边箭头点击事件
+</span><span class="c1"></span><span class="n">iv_right</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                <span class="c1">//获得下一个轮播图的位置
+</span><span class="c1"></span>                <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">lunbo</span><span class="o">.</span><span class="na">getCurrentItem</span><span class="o">()</span> <span class="o">+</span> <span class="n">1</span><span class="o">;</span>
+                <span class="n">jianto</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">});</span>
+
+<span class="c1">//设置轮播图到对应位置和点击箭头时停止自动轮播的方法
+</span><span class="c1"></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">jianto</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">isTouch</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="n">lunbo</span><span class="o">.</span><span class="na">setCurrentItem</span><span class="o">(</span><span class="n">index</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">timer</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="k">new</span> <span class="n">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+                <span class="n">isTouch</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">},</span> <span class="n">1500</span><span class="o">);</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="viewpager适配器"><strong><code>ViewPager</code>适配器</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java">  <span class="kd">private</span> <span class="kd">class</span> <span class="nc">PageAdapter</span> <span class="kd">extends</span> <span class="n">PagerAdapter</span> <span class="o">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getCount</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isViewFromObject</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">View</span> <span class="n">view</span><span class="o">,</span> <span class="nd">@NonNull</span> <span class="n">Object</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">view</span> <span class="o">==</span> <span class="n">object</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="nd">@NonNull</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="n">Object</span> <span class="nf">instantiateItem</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+            <span class="kd">final</span> <span class="kt">int</span> <span class="n">real</span> <span class="o">=</span> <span class="n">position</span> <span class="o">%</span> <span class="n">imgs</span><span class="o">.</span><span class="na">size</span><span class="o">();</span><span class="c1">//imgs为图片集合 
+</span><span class="c1"></span>            <span class="n">ImageView</span> <span class="n">imageView</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ImageView</span><span class="o">(</span><span class="n">container</span><span class="o">.</span><span class="na">getContext</span><span class="o">());</span>
+            <span class="n">imageView</span><span class="o">.</span><span class="na">setScaleType</span><span class="o">(</span><span class="n">ImageView</span><span class="o">.</span><span class="na">ScaleType</span><span class="o">.</span><span class="na">FIT_XY</span><span class="o">);</span><span class="c1">//使图片充满布局
+</span><span class="c1"></span>            <span class="n">imageView</span><span class="o">.</span><span class="na">setImageResource</span><span class="o">(</span><span class="n">imgs</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">real</span><span class="o">));</span>
+            <span class="c1">//设置图片点击事件
+</span><span class="c1"></span>            <span class="n">imageView</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="n">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+                <span class="nd">@Override</span>
+                <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">imgClick</span><span class="o">(</span><span class="n">real</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">});</span>
+            <span class="n">container</span><span class="o">.</span><span class="na">addView</span><span class="o">(</span><span class="n">imageView</span><span class="o">);</span>
+            <span class="k">return</span> <span class="n">imageView</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">destroyItem</span><span class="o">(</span><span class="nd">@NonNull</span> <span class="n">ViewGroup</span> <span class="n">container</span><span class="o">,</span> <span class="kt">int</span> <span class="n">position</span><span class="o">,</span> <span class="nd">@NonNull</span> <span class="n">Object</span> <span class="n">object</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">container</span><span class="o">.</span><span class="na">removeView</span><span class="o">((</span><span class="n">View</span><span class="o">)</span> <span class="n">object</span><span class="o">);</span> 
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="轮播图图片点击事件"><strong>轮播图图片点击事件</strong></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kt">void</span> <span class="nf">imgClick</span><span class="o">(</span><span class="kt">int</span> <span class="n">real</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">getArguments</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//如果是新闻入口进来的轮播图则让他跳转到新闻
+</span><span class="c1"></span>            <span class="n">getFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">addToBackStack</span><span class="o">(</span><span class="kc">null</span><span class="o">).</span><span class="na">replace</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">mian</span><span class="o">,</span> <span class="k">new</span> <span class="n">Fragment_4</span><span class="o">()).</span><span class="na">commit</span><span class="o">();</span>
+            <span class="k">return</span><span class="o">;</span>
+        <span class="o">}</span>
+<span class="c1">//主页入口的轮播图则按对应跳转到相对应得项目
+</span><span class="c1"></span><span class="k">switch</span> <span class="o">(</span><span class="n">real</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="n">0</span><span class="o">:</span>
+        <span class="c1">//如果是对应底部导航栏 的则模拟点击底部导航栏       
+</span><span class="c1"></span>        <span class="n">getActivity</span><span class="o">().</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">ll_xw</span><span class="o">).</span><span class="na">performClick</span><span class="o">();</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">1</span><span class="o">:</span>
+                <span class="n">getFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">replace</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">mian</span><span class="o">,</span> <span class="k">new</span> <span class="n">Fragment_3</span><span class="o">()).</span><span class="na">addToBackStack</span><span class="o">(</span><span class="kc">null</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">2</span><span class="o">:</span>
+                <span class="n">getFragmentManager</span><span class="o">().</span><span class="na">beginTransaction</span><span class="o">().</span><span class="na">replace</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">mian</span><span class="o">,</span> <span class="k">new</span> <span class="n">Fragment_7</span><span class="o">()).</span><span class="na">addToBackStack</span><span class="o">(</span><span class="kc">null</span><span class="o">).</span><span class="na">commit</span><span class="o">();</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">3</span><span class="o">:</span>
+                <span class="n">getActivity</span><span class="o">().</span><span class="na">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">ll_tq</span><span class="o">).</span><span class="na">performClick</span><span class="o">();</span>
+                <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>==<strong>最后记得在页面退出时停止轮播图自动轮播的定时器</strong>==</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2020-10-05</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图" data-hashtags="比赛,Android"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-hashtag="比赛"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图" data-image="/md/Android/比赛/轮播图.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图" data-description="轮播图"><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图" data-description="轮播图"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://seekwj.github.io/%E8%BD%AE%E6%92%AD%E5%9B%BE/" data-title=" 轮播图"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E6%AF%94%E8%B5%9B/">比赛</a>,&nbsp;<a href="/tags/android/">Android</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/ormlite%E6%95%B0%E6%8D%AE%E5%BA%93/" class="prev" rel="prev" title="OrmLite数据库"><i class="fas fa-angle-left fa-fw"></i>OrmLite数据库</a>
+            <a href="/html/" class="next" rel="next" title="HTML">HTML<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">炑炑</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":[""],"clientID":"","clientSecret":"","id":"2020-10-05T20:10:40+08:00","owner":"","repo":"","title":" 轮播图"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

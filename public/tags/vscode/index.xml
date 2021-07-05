@@ -1,0 +1,60 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>VSCode - 标签 - 炑炑先生</title>
+        <link>https://seekwj.github.io/tags/vscode/</link>
+        <description>VSCode - 标签 - 炑炑先生</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 10 Mar 2020 15:58:26 &#43;0800</lastBuildDate><atom:link href="https://seekwj.github.io/tags/vscode/" rel="self" type="application/rss+xml" /><item>
+    <title> VSCode编辑器</title>
+    <link>https://seekwj.github.io/vscode%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+    <pubDate>Tue, 10 Mar 2020 15:58:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://seekwj.github.io/vscode%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/md/VSCode%e7%bc%96%e8%be%91%e5%99%a8.jpg" referrerpolicy="no-referrer">
+            </div><h2 id="vscode快捷键">VSCode快捷键</h2>
+<p>​        <strong>设置：文件-&gt; 首选项 -&gt; 设置  ( 大小、是否换行 word wrap )</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-apl" data-lang="apl">    <span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">s</span> <span class="bp">:</span> <span class="err">保存</span>
+    <span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">a</span> <span class="bp">:</span> <span class="err">全选</span>
+    <span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">x</span><span class="err">、</span><span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">c</span><span class="err">、</span><span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">v</span> <span class="bp">:</span> <span class="err">剪切、复制、粘贴</span>
+    <span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">z</span><span class="err">、</span><span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">y</span> <span class="bp">:</span> <span class="err">撤销、前进</span>
+    <span class="nv">shift</span> <span class="o">+</span> <span class="nv">end</span> <span class="bp">:</span> <span class="err">从头选中一行</span>
+    <span class="nv">shift</span> <span class="o">+</span> <span class="nv">home</span> <span class="bp">:</span> <span class="err">从尾部选中一行</span>
+    <span class="nv">shift</span> <span class="o">+</span> <span class="nv">alt</span> <span class="o">+</span> <span class="o">↓</span> <span class="bp">:</span> <span class="err">快速复制一行</span>
+    <span class="nv">alt</span> <span class="o">+</span> <span class="o">↑</span><span class="err">或</span><span class="o">↓</span> <span class="bp">:</span> <span class="err">快速移动一行</span>
+
+    <span class="nv">tab</span> <span class="bp">:</span> <span class="err">向后缩进</span>
+    <span class="nv">tab</span> <span class="o">+</span> <span class="nv">shift</span> <span class="bp">:</span> <span class="err">向前缩进</span>
+
+    <span class="err">多光标</span> <span class="bp">:</span> <span class="nv">alt</span> <span class="o">+</span> <span class="err">鼠标左键</span>
+    <span class="nv">ctrl</span> <span class="o">+</span> <span class="nv">d</span> <span class="bp">:</span> <span class="err">选则相同元素的下一个</span>
+
+    <span class="err">快捷添加注释和删除注释</span>
+    <span class="m">1</span><span class="na">.</span><span class="nv">ctrl</span> <span class="o">+</span> <span class="na">/</span>
+    <span class="m">2</span><span class="na">.</span><span class="nv">shift</span> <span class="o">+</span> <span class="nv">alt</span> <span class="o">+</span> <span class="nv">a</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item></channel>
+</rss>

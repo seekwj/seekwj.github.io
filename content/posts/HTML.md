@@ -42,7 +42,7 @@ featuredImage: "/md/HTML.jpg"
     <标签 属性="值" 属性2="值2">
 ```
 
-
+<br>
 
 ## **HTML初始代码**
 
@@ -62,7 +62,7 @@ featuredImage: "/md/HTML.jpg"
 </html>
 ```
 
-
+<br>
 
 ## **HTML注释**
 
@@ -78,7 +78,7 @@ featuredImage: "/md/HTML.jpg"
 	1. **`ctrl + /`**
 	2. **`shift + alt + a `**
 
-
+<br>
 
 ## **标题与段落**
 
@@ -88,7 +88,7 @@ featuredImage: "/md/HTML.jpg"
 
 - **段落 -> 双标签 : `<p></p>`**
 
-
+<br>
 
 ## **文本修饰标签**
 
@@ -121,7 +121,7 @@ featuredImage: "/md/HTML.jpg"
 
 ------
 
-
+<br>
 
 ## **图片标签**
 
@@ -132,7 +132,7 @@ featuredImage: "/md/HTML.jpg"
 -  **`title` : 提示信息**
 - **`width`、`height` : 图片的大小**
 
-
+<br>
 
 ## **链接标签**
 
@@ -145,7 +145,7 @@ featuredImage: "/md/HTML.jpg"
 
 ​	**（一般写在`<head>`中）**
 
-
+<br>
 
 ## **锚点**
 
@@ -154,7 +154,7 @@ featuredImage: "/md/HTML.jpg"
 - **#号 + id属性**
 - **#号 + name属性（注意name属性加给的是a标签）**
 
-
+<br>
 
 ## **特殊字符**
 
@@ -169,7 +169,7 @@ featuredImage: "/md/HTML.jpg"
 |   **`￥`**   |  **人民币**  |   **`&yen;`**    |
 |   **`°`**    |  **摄氏度**  |   **`&deg;`**    |
 
-
+<br>
 
 ## **列表标签**
 
@@ -179,7 +179,7 @@ featuredImage: "/md/HTML.jpg"
 
 ​    **`注：列表之间可以互相嵌套，形成多层级的列表`**
 
-
+<br>
 
 ## **表格标签**
 
@@ -213,7 +213,7 @@ featuredImage: "/md/HTML.jpg"
 
   [表格信息展示小案例](../demo/表格信息展示小案例/表格信息展示案例.html)
 
-
+<br>
 
 ## **表单标签**
 
@@ -314,6 +314,8 @@ featuredImage: "/md/HTML.jpg"
         <input type="submit">
 </form>
 ```
+
+<br>
 
 ## **div和span**
 
