@@ -128,11 +128,28 @@
 
 ### **`background-attachment` : 背景图随滚动条移动的方式**
 
-- `scroll` : `默认值`  ( 背景位置是按照当前元素进行偏移的 )
+- `scroll` : `默认值` ( 背景位置是按照当前元素进行偏移的 )
 
 - `fixed` ： ( 背景位置是按照浏览器进行偏移的 )
 
   **练习 ：[利用滚动条移动方式实现视觉差网页](../demo/视觉差/视觉差.html)（请用PC浏览器查看）**
+
+### **`background-size` : 背景图的尺寸大小**
+
+- `cover` : 覆盖
+- `contain` : 包含 
+
+###  **`background-origin` : 背景图的填充位置**
+
+- `padding-box` **(默认)**
+- `border-box`
+- `content-box`
+
+### **`background-clip` : 背景图的裁切方式**
+
+- `border-box` **(默认)** 
+- `padding-box`
+- `content-box`
 
 <br>
 
@@ -468,7 +485,7 @@
 >
 > - **`style`行间 权重 1000**
 > - **`id`       权重 100**
-> - **`class`    权重 10**
+> - **`class`    权重 10** 
 > - **`tag`      权重 1**
 
 ### **!important**
@@ -1346,5 +1363,216 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 ### **好处**
 
 - **可以减少图片的质量，网页的图片加载速度快减少图片的请求的次数，加快网页的打开**
+
+<br>
+
+## **transition过渡**
+
+- **`transition-property` ：规定设置过渡效果的CSS属性的名称**
+
+- **`transition-duration` ：规定完成过渡效果需要多少秒或毫秒**
+
+- **`transition-delay` ：定义过渡效果何时开始 （延迟(数值为正数)，也可以提前执行（数值为负数）**
+
+- **`transition-timimg-function` ：规定速度效果的速度曲线**
+
+  - **`ease`(默认值)**
+
+    <img src="../md/CSS/transition过渡.png" title="过渡曲线" />
+    
+  - **`cubic-bezier`**
+  
+    - **调整曲线的网站[http://cubic-bezier.com](http://cubic-bezier.com)**
+
+<br>
+
+## **transform变形**
+
+- **`translate` ：位移**
+
+  - **translateX**
+  - **translateY**
+  - **translateZ**（3D）正值向前，负值向后
+
+- **`scale` ：缩放 （值是一个比例值，正常大小就是1，会以当前元素中心点进行缩放）**
+
+  - **scaleX**
+  - **scaleY**
+  - **scaleZ** （3D）立体元素的厚度
+
+- **`rotate` ：旋转** （单位是角度 deg）
+
+  - **rotateX** （3D）正值向上翻转
+  - **rotateY** （3D）正值向右翻转
+  - **rotateZ** （和rotate是等级关系，正值是按顺时针旋转，负值是按逆时针旋转）
+
+- **`skew` ：斜切**
+
+  - **skewX** ：单位也是角度，正值向左倾斜，负值向右倾斜
+  - **skewY**
+
+- **`transform-origin` ：基点的位置**
+
+  - **值 ：`x`、`y`、`z`**
+
+    <mark>（z只能写数值，不能写单词）</mark>
+  
+   ```css
+    默认值 ：
+    transform-origin : center center;
+   ```
+  
+    
+
+> **transform的<mark>注意事项</mark>：**
+>
+> 1. 变形操作不会影响到其他元素
+>
+> 2. 变形操作只能添加给块元素，但是不能添加给内联元素
+>
+> 3. 复合写法，可以同时添加多个变形操作
+>
+>    执行是有顺序的，先执行后面的操作，在执行前面的操作
+>
+>    `translate`会受到rotate、scale、skew的影响
+
+### **3D写法**
+
+- **`scale3d()` ：三个值 x y z**
+- **`translate3d()` ：三个值 x y z**
+- **`rotate3d()` ：四个值 0|1（x轴是否添加旋转角度） 0|1（y轴是否添加旋转角度） 0|1（z轴是否添加旋转角度）deg （添加旋转的角度）**
+
+### **3D相关属性**
+
+- **`perspective`（景深） : 离屏幕多远的距离去观察元素，值越大幅度越小**
+- **`perspective-origin` : 景深-基点位置，观察元素的角度**
+-  **`transform-style` : 3D空间**
+  - **`flat`  (默认值2d)**
+  - **`preserve-3d`   (3d，产生一个三维空间)**
+-   **`backface-visibility` : 背面隐藏**
+  - **`visible`（默认值）**
+  - **`hidden`**
+
+<br>
+
+## **animation动画**
+
+- **`animation-name` ：设置动画的名字（自定义）**
+
+- **`animation-duration` ：动画的持续时间**
+
+- **`animation-delay` ：动画的延迟时间**
+
+- **`animation-iteration-count` ：动画的重复次数**
+
+  - <mark>默认值</mark>就是1
+  - infinite无限次数
+
+- **`animation-timing-function` ：动画的运动形式**
+
+- **复合写法 ：**
+
+  **`animation` ：动画名字	持续时间	延迟时间	重复次数	运动形式**
+
+  > **注 ：**
+  >
+  > 1. 运动结束后，默认情况下会停留在**起始位置**
+  > 2. 在@keyframes中**from**等价于**0%**，**to**等价于**100%**
+
+- **`animation-fill-mode` ：规定动画播放之前或之后，其动画效果是否可见**
+
+  - **none<mark>（默认值）</mark>**：在运动结束之后回到初始位置，在延迟的情况下，让0%在延迟后生效
+  - **backwards** ：在延迟的情况下，让0%在延迟前生效
+  - **forwards** ：在运动结束之后，停到结束位置
+  - **both** ：backwards和forwards同时生效
+
+- **`animation-direction` ：属性定义是否应该轮流反向播放动画**
+
+  - **alternate** ：一次正向（0% ~ 100%），一次反向（100% ~ 0%）
+  - **reverse** ：永远都是反向，从100% ~ 0%
+  - **normal<mark>（默认值）</mark>**：永远都是正向，从0% ~ 100%
+  
+- **`animation-play-state`:定义一个动画是否运行或者暂停**
+  - **paused ：** 暂停
+  - **running ：** 运行
+
+<br>
+
+## **animate.css**
+
+**一款强大的预设css3动画库**
+
+**官网地址 ：[https://daneden.github.io/animate.css/](https://daneden.github.io/animate.css/)**
+
+**基本使用 ：**
+
+- **`animated` ：基类（基础的样式，每个动画效果都需要加）**
+- **`infinite` ：动画的无限次数**
+
+<br>
+
+## **CSS渐变**
+
+-  **线性渐变 ---> `linear-gradient`**是值，需要添加到**`background-image`**属性上
+
+   - **代码示例 ：**
+
+    ```css
+    /*倾斜-45度*/
+    .box1{width:300px;height:300px;border:1px black solid; background-image:linear-gradient(-45deg,yellow,blue)
+    
+    /*不加角度*/
+    .box2{width:300px;height:300px;border:1px black solid; background-image:linear-gradient(red,blue)}
+        
+    /*倾斜45度*/
+    .box3{width:300px;height:300px;border:1px black solid; background-image:linear-gradient(45deg,yellow,blue)
+    ```
+
+    <style>
+        #jb{width:300px;height:300px;border:1px black solid;}
+        .jbbox1,.jbbox2,.jbbox3{width:33%;height:100%;float:left;text-align: center;color: antiquewhite;padding-top:10px}
+        .jbbox1{background-image:linear-gradient(-45deg,yellow,blue)}
+        .jbbox2{background-image:linear-gradient(red,blue)}
+        .jbbox3{background-image:linear-gradient(45deg,yellow,blue)
+    </style> 
+    <div id="jb">
+      	<div class="jbbox1">倾斜负45度</div>
+    	<div class="jbbox2">不加角度</div>
+    	<div class="jbbox3">倾斜45度</div>
+    </div>
+
+    > **注 ：渐变的0度是从下往上，角度为正值按照顺时针旋转，负值按逆时针旋转**
+
+- **径向渐变 ---> `radial-gradient`** 
+
+  - **代码示例 ：**
+
+    ```css
+    .box{width:300px;height:300px;border:1px black solid; background-image:radial-gradient(blue,yellow,cyan)
+    ```
+
+    <style>
+        .jbbox{width:300px;height:300px;border:1px black solid; background-image:radial-gradient(blue,yellow,cyan);text-align: center;color: black;padding-top:10px;font-size: 20px;}
+    </style>
+    <div class="jbbox">径向渐变</div>
+
+<br>
+
+## **字体图标**
+
+**`font-face`是CSS3中的一个模块，他主要是把自己定义的Web字体嵌入到你的网页中**
+
+- **好处 ：**
+
+  1. 可以非常方便的改变大小和颜色
+  2. 放大后不会失真
+  3. 减少请求次数和提高加载速度
+  4. 简化网页布局
+  5. 减少设计师和前端工程师的工作量
+  6. 可使用计算机没有提供的字体
+
+- **自定义字体图标**
+
+  **在线生成字体图标**[https://icomoon.io/app](https://icomoon.io/app)
 
 

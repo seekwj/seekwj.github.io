@@ -149,12 +149,29 @@
 <h3 id="background-attachment--背景图随滚动条移动的方式"><strong><code>background-attachment</code> : 背景图随滚动条移动的方式</strong></h3>
 <ul>
 <li>
-<p><code>scroll</code> : <code>默认值</code>  ( 背景位置是按照当前元素进行偏移的 )</p>
+<p><code>scroll</code> : <code>默认值</code> ( 背景位置是按照当前元素进行偏移的 )</p>
 </li>
 <li>
 <p><code>fixed</code> ： ( 背景位置是按照浏览器进行偏移的 )</p>
 <p><strong>练习 ：<a href="../demo/%e8%a7%86%e8%a7%89%e5%b7%ae/%e8%a7%86%e8%a7%89%e5%b7%ae.html" rel="">利用滚动条移动方式实现视觉差网页</a>（请用PC浏览器查看）</strong></p>
 </li>
+</ul>
+<h3 id="background-size--背景图的尺寸大小"><strong><code>background-size</code> : 背景图的尺寸大小</strong></h3>
+<ul>
+<li><code>cover</code> : 覆盖</li>
+<li><code>contain</code> : 包含</li>
+</ul>
+<h3 id="background-origin--背景图的填充位置"><strong><code>background-origin</code> : 背景图的填充位置</strong></h3>
+<ul>
+<li><code>padding-box</code> <strong>(默认)</strong></li>
+<li><code>border-box</code></li>
+<li><code>content-box</code></li>
+</ul>
+<h3 id="background-clip--背景图的裁切方式"><strong><code>background-clip</code> : 背景图的裁切方式</strong></h3>
+<ul>
+<li><code>border-box</code> <strong>(默认)</strong></li>
+<li><code>padding-box</code></li>
+<li><code>content-box</code></li>
 </ul>
 <br>
 <h2 id="css边框样式"><strong>CSS边框样式</strong></h2>
@@ -1904,6 +1921,275 @@
 <h3 id="好处"><strong>好处</strong></h3>
 <ul>
 <li><strong>可以减少图片的质量，网页的图片加载速度快减少图片的请求的次数，加快网页的打开</strong></li>
+</ul>
+<br>
+<h2 id="transition过渡"><strong>transition过渡</strong></h2>
+<ul>
+<li>
+<p><strong><code>transition-property</code> ：规定设置过渡效果的CSS属性的名称</strong></p>
+</li>
+<li>
+<p><strong><code>transition-duration</code> ：规定完成过渡效果需要多少秒或毫秒</strong></p>
+</li>
+<li>
+<p><strong><code>transition-delay</code> ：定义过渡效果何时开始 （延迟(数值为正数)，也可以提前执行（数值为负数）</strong></p>
+</li>
+<li>
+<p><strong><code>transition-timimg-function</code> ：规定速度效果的速度曲线</strong></p>
+<ul>
+<li>
+<p><strong><code>ease</code>(默认值)</strong></p>
+<p></p>
+</li>
+<li>
+<p><strong><code>cubic-bezier</code></strong></p>
+<ul>
+<li><strong>调整曲线的网站<a href="http://cubic-bezier.com" target="_blank" rel="noopener noreffer">http://cubic-bezier.com</a></strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<h2 id="transform变形"><strong>transform变形</strong></h2>
+<ul>
+<li>
+<p><strong><code>translate</code> ：位移</strong></p>
+<ul>
+<li><strong>translateX</strong></li>
+<li><strong>translateY</strong></li>
+<li><strong>translateZ</strong>（3D）正值向前，负值向后</li>
+</ul>
+</li>
+<li>
+<p><strong><code>scale</code> ：缩放 （值是一个比例值，正常大小就是1，会以当前元素中心点进行缩放）</strong></p>
+<ul>
+<li><strong>scaleX</strong></li>
+<li><strong>scaleY</strong></li>
+<li><strong>scaleZ</strong> （3D）立体元素的厚度</li>
+</ul>
+</li>
+<li>
+<p><strong><code>rotate</code> ：旋转</strong> （单位是角度 deg）</p>
+<ul>
+<li><strong>rotateX</strong> （3D）正值向上翻转</li>
+<li><strong>rotateY</strong> （3D）正值向右翻转</li>
+<li><strong>rotateZ</strong> （和rotate是等级关系，正值是按顺时针旋转，负值是按逆时针旋转）</li>
+</ul>
+</li>
+<li>
+<p><strong><code>skew</code> ：斜切</strong></p>
+<ul>
+<li><strong>skewX</strong> ：单位也是角度，正值向左倾斜，负值向右倾斜</li>
+<li><strong>skewY</strong></li>
+</ul>
+</li>
+<li>
+<p><strong><code>transform-origin</code> ：基点的位置</strong></p>
+<ul>
+<li>
+<p><strong>值 ：<code>x</code>、<code>y</code>、<code>z</code></strong></p>
+<p><mark>（z只能写数值，不能写单词）</mark></p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"> <span class="nt">默认值</span> <span class="err">：</span>
+ <span class="nt">transform-origin</span> <span class="o">:</span> <span class="nt">center</span> <span class="nt">center</span><span class="o">;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<blockquote>
+<p><strong>transform的<mark>注意事项</mark>：</strong></p>
+<ol>
+<li>
+<p>变形操作不会影响到其他元素</p>
+</li>
+<li>
+<p>变形操作只能添加给块元素，但是不能添加给内联元素</p>
+</li>
+<li>
+<p>复合写法，可以同时添加多个变形操作</p>
+<p>执行是有顺序的，先执行后面的操作，在执行前面的操作</p>
+<p><code>translate</code>会受到rotate、scale、skew的影响</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="3d写法"><strong>3D写法</strong></h3>
+<ul>
+<li><strong><code>scale3d()</code> ：三个值 x y z</strong></li>
+<li><strong><code>translate3d()</code> ：三个值 x y z</strong></li>
+<li><strong><code>rotate3d()</code> ：四个值 0|1（x轴是否添加旋转角度） 0|1（y轴是否添加旋转角度） 0|1（z轴是否添加旋转角度）deg （添加旋转的角度）</strong></li>
+</ul>
+<h3 id="3d相关属性"><strong>3D相关属性</strong></h3>
+<ul>
+<li><strong><code>perspective</code>（景深） : 离屏幕多远的距离去观察元素，值越大幅度越小</strong></li>
+<li><strong><code>perspective-origin</code> : 景深-基点位置，观察元素的角度</strong></li>
+<li><strong><code>transform-style</code> : 3D空间</strong></li>
+<li><strong><code>flat</code>  (默认值2d)</strong></li>
+<li><strong><code>preserve-3d</code>   (3d，产生一个三维空间)</strong></li>
+<li><strong><code>backface-visibility</code> : 背面隐藏</strong></li>
+<li><strong><code>visible</code>（默认值）</strong></li>
+<li><strong><code>hidden</code></strong></li>
+</ul>
+<br>
+<h2 id="animation动画"><strong>animation动画</strong></h2>
+<ul>
+<li>
+<p><strong><code>animation-name</code> ：设置动画的名字（自定义）</strong></p>
+</li>
+<li>
+<p><strong><code>animation-duration</code> ：动画的持续时间</strong></p>
+</li>
+<li>
+<p><strong><code>animation-delay</code> ：动画的延迟时间</strong></p>
+</li>
+<li>
+<p><strong><code>animation-iteration-count</code> ：动画的重复次数</strong></p>
+<ul>
+<li><mark>默认值</mark>就是1</li>
+<li>infinite无限次数</li>
+</ul>
+</li>
+<li>
+<p><strong><code>animation-timing-function</code> ：动画的运动形式</strong></p>
+</li>
+<li>
+<p><strong>复合写法 ：</strong></p>
+<p><strong><code>animation</code> ：动画名字	持续时间	延迟时间	重复次数	运动形式</strong></p>
+<blockquote>
+<p><strong>注 ：</strong></p>
+<ol>
+<li>运动结束后，默认情况下会停留在<strong>起始位置</strong></li>
+<li>在@keyframes中<strong>from</strong>等价于<strong>0%</strong>，<strong>to</strong>等价于<strong>100%</strong></li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p><strong><code>animation-fill-mode</code> ：规定动画播放之前或之后，其动画效果是否可见</strong></p>
+<ul>
+<li><strong>none<mark>（默认值）</mark></strong>：在运动结束之后回到初始位置，在延迟的情况下，让0%在延迟后生效</li>
+<li><strong>backwards</strong> ：在延迟的情况下，让0%在延迟前生效</li>
+<li><strong>forwards</strong> ：在运动结束之后，停到结束位置</li>
+<li><strong>both</strong> ：backwards和forwards同时生效</li>
+</ul>
+</li>
+<li>
+<p><strong><code>animation-direction</code> ：属性定义是否应该轮流反向播放动画</strong></p>
+<ul>
+<li><strong>alternate</strong> ：一次正向（0% ~ 100%），一次反向（100% ~ 0%）</li>
+<li><strong>reverse</strong> ：永远都是反向，从100% ~ 0%</li>
+<li><strong>normal<mark>（默认值）</mark></strong>：永远都是正向，从0% ~ 100%</li>
+</ul>
+</li>
+<li>
+<p><strong><code>animation-play-state</code>:定义一个动画是否运行或者暂停</strong></p>
+<ul>
+<li><strong>paused ：</strong> 暂停</li>
+<li><strong>running ：</strong> 运行</li>
+</ul>
+</li>
+</ul>
+<br>
+<h2 id="animatecss"><strong>animate.css</strong></h2>
+<p><strong>一款强大的预设css3动画库</strong></p>
+<p><strong>官网地址 ：<a href="https://daneden.github.io/animate.css/" target="_blank" rel="noopener noreffer">https://daneden.github.io/animate.css/</a></strong></p>
+<p><strong>基本使用 ：</strong></p>
+<ul>
+<li><strong><code>animated</code> ：基类（基础的样式，每个动画效果都需要加）</strong></li>
+<li><strong><code>infinite</code> ：动画的无限次数</strong></li>
+</ul>
+<br>
+<h2 id="css渐变"><strong>CSS渐变</strong></h2>
+<ul>
+<li>
+<p>**线性渐变 &mdash;&gt; <code>linear-gradient</code><strong>是值，需要添加到</strong><code>background-image</code>**属性上</p>
+<ul>
+<li><strong>代码示例 ：</strong></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*倾斜-45度*/</span>
+<span class="p">.</span><span class="nc">box1</span><span class="p">{</span><span class="k">width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">height</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span> <span class="kc">black</span> <span class="kc">solid</span><span class="p">;</span> <span class="k">background-image</span><span class="p">:</span><span class="nb">linear-gradient</span><span class="p">(</span><span class="mi">-45</span><span class="kt">deg</span><span class="p">,</span><span class="kc">yellow</span><span class="p">,</span><span class="kc">blue</span><span class="p">)</span>
+
+<span class="c">/*不加角度*/</span>
+<span class="o">.</span><span class="n">box2</span><span class="err">{</span><span class="k">width</span><span class="o">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">height</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span> <span class="kc">black</span> <span class="kc">solid</span><span class="p">;</span> <span class="k">background-image</span><span class="p">:</span><span class="nb">linear-gradient</span><span class="p">(</span><span class="kc">red</span><span class="p">,</span><span class="kc">blue</span><span class="p">)}</span>
+
+<span class="c">/*倾斜45度*/</span>
+<span class="p">.</span><span class="nc">box3</span><span class="p">{</span><span class="k">width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">height</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span> <span class="kc">black</span> <span class="kc">solid</span><span class="p">;</span> <span class="k">background-image</span><span class="p">:</span><span class="nb">linear-gradient</span><span class="p">(</span><span class="mi">45</span><span class="kt">deg</span><span class="p">,</span><span class="kc">yellow</span><span class="p">,</span><span class="kc">blue</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div> <style>
+     #jb{width:300px;height:300px;border:1px black solid;}
+     .jbbox1,.jbbox2,.jbbox3{width:33%;height:100%;float:left;text-align: center;color: antiquewhite;padding-top:10px}
+     .jbbox1{background-image:linear-gradient(-45deg,yellow,blue)}
+     .jbbox2{background-image:linear-gradient(red,blue)}
+     .jbbox3{background-image:linear-gradient(45deg,yellow,blue)
+ </style> 
+ <div id="jb">
+     <div class="jbbox1">倾斜负45度</div>
+     <div class="jbbox2">不加角度</div>
+     <div class="jbbox3">倾斜45度</div>
+ </div>
+<blockquote>
+<p><strong>注 ：渐变的0度是从下往上，角度为正值按照顺时针旋转，负值按逆时针旋转</strong></p>
+</blockquote>
+</li>
+<li>
+<p><strong>径向渐变 &mdash;&gt; <code>radial-gradient</code></strong></p>
+<ul>
+<li>
+<p><strong>代码示例 ：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">box</span><span class="p">{</span><span class="k">width</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">height</span><span class="p">:</span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span><span class="k">border</span><span class="p">:</span><span class="mi">1</span><span class="kt">px</span> <span class="kc">black</span> <span class="kc">solid</span><span class="p">;</span> <span class="k">background-image</span><span class="p">:</span><span class="nb">radial-gradient</span><span class="p">(</span><span class="kc">blue</span><span class="p">,</span><span class="kc">yellow</span><span class="p">,</span><span class="kc">cyan</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><style>
+    .jbbox{width:300px;height:300px;border:1px black solid; background-image:radial-gradient(blue,yellow,cyan);text-align: center;color: black;padding-top:10px;font-size: 20px;}
+</style>
+<div class="jbbox">径向渐变</div>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<h2 id="字体图标"><strong>字体图标</strong></h2>
+<p><strong><code>font-face</code>是CSS3中的一个模块，他主要是把自己定义的Web字体嵌入到你的网页中</strong></p>
+<ul>
+<li>
+<p><strong>好处 ：</strong></p>
+<ol>
+<li>可以非常方便的改变大小和颜色</li>
+<li>放大后不会失真</li>
+<li>减少请求次数和提高加载速度</li>
+<li>简化网页布局</li>
+<li>减少设计师和前端工程师的工作量</li>
+<li>可使用计算机没有提供的字体</li>
+</ol>
+</li>
+<li>
+<p><strong>自定义字体图标</strong></p>
+<p><strong>在线生成字体图标</strong><a href="https://icomoon.io/app" target="_blank" rel="noopener noreffer">https://icomoon.io/app</a></p>
+</li>
 </ul>
 ]]></description>
 </item><item>
